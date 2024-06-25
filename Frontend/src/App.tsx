@@ -2,11 +2,11 @@ import GlobalStyles from './styles/GlobalStyles';
 import { ThemeProvider } from 'styled-components';
 import Layout from './components/Layout';
 
-import dark from './styles/themes/dark';
+import light from './styles/themes/light';
 
 function App() {
   return (
-    <ThemeProvider theme={dark}>
+    <ThemeProvider theme={light}>
       <GlobalStyles />
       <Layout />
     </ThemeProvider>
