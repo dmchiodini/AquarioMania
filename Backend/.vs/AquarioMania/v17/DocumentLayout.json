@@ -1,0 +1,138 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\55119\\source\\repos\\AquarioMania\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\source\\repos\\aquariomania\\aquariomania\\service\\livingbeingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\service\\livingbeingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\source\\repos\\aquariomania\\aquariomania\\controllers\\livingbeingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\controllers\\livingbeingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\source\\repos\\aquariomania\\aquariomania\\enums\\typeofwaterenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\enums\\typeofwaterenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\source\\repos\\aquariomania\\aquariomania\\enums\\typeoflifeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\enums\\typeoflifeenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\source\\repos\\aquariomania\\aquariomania\\enums\\behaviorenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\enums\\behaviorenum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\source\\repos\\aquariomania\\aquariomania\\service\\ilivingbeinginterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\service\\ilivingbeinginterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LivingBeingService.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\source\\repos\\AquarioMania\\AquarioMania\\Service\\LivingBeingService.cs",
+              "RelativeDocumentMoniker": "AquarioMania\\Service\\LivingBeingService.cs",
+              "ToolTip": "C:\\Users\\55119\\source\\repos\\AquarioMania\\AquarioMania\\Service\\LivingBeingService.cs",
+              "RelativeToolTip": "AquarioMania\\Service\\LivingBeingService.cs",
+              "ViewState": "AQIAAJEAAAAAAAAAAAAmwKIAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T20:10:28.695Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LivingBeingController.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\source\\repos\\AquarioMania\\AquarioMania\\Controllers\\LivingBeingController.cs",
+              "RelativeDocumentMoniker": "AquarioMania\\Controllers\\LivingBeingController.cs",
+              "ToolTip": "C:\\Users\\55119\\source\\repos\\AquarioMania\\AquarioMania\\Controllers\\LivingBeingController.cs",
+              "RelativeToolTip": "AquarioMania\\Controllers\\LivingBeingController.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAAwC0AAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T20:05:25.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BehaviorEnum.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\source\\repos\\AquarioMania\\AquarioMania\\Enums\\BehaviorEnum.cs",
+              "RelativeDocumentMoniker": "AquarioMania\\Enums\\BehaviorEnum.cs",
+              "ToolTip": "C:\\Users\\55119\\source\\repos\\AquarioMania\\AquarioMania\\Enums\\BehaviorEnum.cs",
+              "RelativeToolTip": "AquarioMania\\Enums\\BehaviorEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T18:14:13.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TypeOfLifeEnum.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\source\\repos\\AquarioMania\\AquarioMania\\Enums\\TypeOfLifeEnum.cs",
+              "RelativeDocumentMoniker": "AquarioMania\\Enums\\TypeOfLifeEnum.cs",
+              "ToolTip": "C:\\Users\\55119\\source\\repos\\AquarioMania\\AquarioMania\\Enums\\TypeOfLifeEnum.cs",
+              "RelativeToolTip": "AquarioMania\\Enums\\TypeOfLifeEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T18:13:44.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TypeOfWaterEnum.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\source\\repos\\AquarioMania\\AquarioMania\\Enums\\TypeOfWaterEnum.cs",
+              "RelativeDocumentMoniker": "AquarioMania\\Enums\\TypeOfWaterEnum.cs",
+              "ToolTip": "C:\\Users\\55119\\source\\repos\\AquarioMania\\AquarioMania\\Enums\\TypeOfWaterEnum.cs",
+              "RelativeToolTip": "AquarioMania\\Enums\\TypeOfWaterEnum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T18:12:30.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ILivingBeingInterface.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\source\\repos\\AquarioMania\\AquarioMania\\Service\\ILivingBeingInterface.cs",
+              "RelativeDocumentMoniker": "AquarioMania\\Service\\ILivingBeingInterface.cs",
+              "ToolTip": "C:\\Users\\55119\\source\\repos\\AquarioMania\\AquarioMania\\Service\\ILivingBeingInterface.cs",
+              "RelativeToolTip": "AquarioMania\\Service\\ILivingBeingInterface.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T21:38:48.395Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
