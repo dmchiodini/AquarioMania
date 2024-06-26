@@ -1,5 +1,5 @@
 import { getIcon } from '../../../../utils/getIcon';
-import { Container, BoxItem } from './styles';
+import { Container, BoxItem, SocialContainer } from './styles';
 
 export const Header = () => {
   return (
@@ -13,10 +13,18 @@ export const Header = () => {
         </button>
       </BoxItem>
 
-      <BoxItem>
-        <button>
-          {getIcon({ name: 'uil:instagram', width: 25, height: 25 })}
-        </button>
+      <BoxItem className="login">
+        <button>ENTRAR</button>
+        <button>REGISTRAR</button>
+
+        <SocialContainer>
+          <button>
+            {getIcon({ name: 'uil:instagram', width: 20, height: 20 })}
+          </button>
+          <button>
+            {getIcon({ name: 'fe:facebook', width: 20, height: 20 })}
+          </button>
+        </SocialContainer>
       </BoxItem>
     </Container>
   );

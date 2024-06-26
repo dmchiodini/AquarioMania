@@ -8,8 +8,8 @@ export default {
     light: '#6497b1',
     lighter: '#b3cde0',
 
-    white: '#000000',
-    black: '#FFFFFF',
+    white: '#FFFFFF',
+    black: '#000000',
     gray: '#BFBFBF',
 
     success: '#00C851',

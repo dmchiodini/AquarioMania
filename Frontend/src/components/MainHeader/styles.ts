@@ -6,4 +6,5 @@ export const Container = styled.div`
   color: ${(prop) => prop.theme.colors.white};
   display: flex;
   flex-direction: column;
+  height: 280px;
 `;

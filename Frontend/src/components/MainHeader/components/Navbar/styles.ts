@@ -1,20 +1,20 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  height: 60px;
+  height: 50px;
   width: 100%;
   padding: 10px 20px;
   background-color: ${(props) => props.theme.colors.dark};
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 14px;
 `;
 
 export const NavContainer = styled.div`
   display: flex;
   gap: 20px;
   color: #fff;
-  font-size: 18px;
 
   .menu {
     display: flex;
@@ -71,14 +71,19 @@ export const ItemSubMenu = styled.div`
   background-color: ${(props) => props.theme.colors.lighter};
   width: 200px;
   left: 0px;
-  top: 45px;
-  border-radius: 8px;
+  top: 30px;
+  border-radius: 6px;
   display: none;
+
+  button {
+    border-radius: 6px;
+  }
 `;
 
 export const SearchContainer = styled.div`
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   width: 100%;
   height: 100%;
 `;
@@ -86,8 +91,8 @@ export const SearchContainer = styled.div`
 export const Search = styled.input`
   width: 100%;
   max-width: 300px;
-  height: 40px;
-  border-radius: 8px;
-  background-color: #ddd;
+  height: 35px;
+  border-radius: 6px;
+  background-color: #fff;
   padding: 10px;
 `;

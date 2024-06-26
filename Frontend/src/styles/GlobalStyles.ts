@@ -19,6 +19,11 @@ export default createGlobalStyle`
 
     button {
       cursor: pointer;
+
+
+      &:hover {
+        filter: brightness(70%)
+      }
     }
 
 

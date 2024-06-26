@@ -1,11 +1,11 @@
-import { Container, Image } from './styles';
+import { Container, ImageContainer, ImageHeader } from './styles';
 
 export const MainImage = () => {
   return (
     <Container>
-      <Image>
-        <img alt="" src="aquario_mania.png" />
-      </Image>
+      <ImageContainer>
+        <ImageHeader alt="" src="aquario_mania.png" />
+      </ImageContainer>
     </Container>
   );
 };
