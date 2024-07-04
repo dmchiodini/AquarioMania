@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "Hash": "rdAAPNG+OBs70cJq4NYQ5cFMCQOry16hxsTelDDZ2mA=",
+  "Source": "AquarioMania",
+  "BasePath": "_content/AquarioMania",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "AquarioMania\\wwwroot",
+      "Source": "AquarioMania",
+      "ContentRoot": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\wwwroot\\",
+      "BasePath": "_content/AquarioMania",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": []
+}
