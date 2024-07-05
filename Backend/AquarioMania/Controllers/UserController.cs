@@ -4,11 +4,14 @@ using AquarioMania.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Azure;
+using AquarioMania.Models.LivingBeing;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AquarioMania.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize]
 public class UserController : ControllerBase
 {
     private readonly IUserInterface _service;
@@ -19,148 +22,80 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<ActionResult<ServiceResponse<IEnumerable<UserModel>>>> GetUsers()
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(Response<ListLivingBeingModel>), StatusCodes.Status500InternalServerError)]
+    public async Task<ActionResult<ServiceResponse<IEnumerable<UserResponseModel>>>> GetUsers()
     {
-        try
-        {
-            var response = await _service.GetUsers();
-            return StatusCode(StatusCodes.Status200OK, new ServiceResponse<IEnumerable<UserResponseModel>>()
-            {
-                Status = StatusCodes.Status200OK,
-                Success = true,
-                Message = response.Count() == 0 ? "Não há usuários cadastrados" : "Usuários retornados com sucesso",
-                Data = response,
-            });
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(StatusCodes.Status500InternalServerError, new ServiceResponse<UserResponseModel>() { Status = StatusCodes.Status500InternalServerError, Success = false, Message = ex.Message });
-        }
+        var response = await _service.GetUsers();
+        return response;
     }
 
     [HttpGet("{id}")]
-    public async Task<ActionResult<ServiceResponse<UserModel>>> GetUsers(int id)
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(Response<ListLivingBeingModel>), StatusCodes.Status500InternalServerError)]
+    public async Task<ActionResult<ServiceResponse<UserResponseModel>>> GetUsers(int id)
     {
-        try
-        {
-            var response = await _service.GetUserById(id);
-            return StatusCode(StatusCodes.Status200OK, new ServiceResponse<UserResponseModel>()
-            {
-                Status = StatusCodes.Status200OK,
-                Success = true,
-                Message = response == null ? $"Não foi localizado usuário com o id {id}" : "Usuários retornado com sucesso",
-                Data = response,
-            });
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(StatusCodes.Status500InternalServerError, new ServiceResponse<UserModel>() { Status = StatusCodes.Status500InternalServerError, Success = false, Message = ex.Message });
-        }
+        var response = await _service.GetUserById(id);
+        return Ok(response);
     }
 
     [HttpGet("GetByEmail")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(Response<ListLivingBeingModel>), StatusCodes.Status500InternalServerError)]
     public async Task<ActionResult<ServiceResponse<UserResponseModel>>> GetUserByEmail(string email)
     {
-         try 
-
-        {
-            var response = await _service.GetUserByEmail(email);
-            return StatusCode(StatusCodes.Status200OK, new ServiceResponse<UserResponseModel>()
-            {
-                Status = StatusCodes.Status200OK,
-                Success = true,
-                Message = response == null ? $"Não foi localizado usuário com o email {email}" : "Usuários retornado com sucesso",
-                Data = response,
-            });
-        }
-	    catch (Exception ex)
-	    {
-            return StatusCode(StatusCodes.Status500InternalServerError, new ServiceResponse<UserModel>() { Status = StatusCodes.Status500InternalServerError, Success = false, Message = ex.Message });
-        }
-    
+        var response = await _service.GetUserByEmail(email);
+        return response;    
     }
 
     [HttpDelete]
-    public async Task<ActionResult<ServiceResponse<UserModel>>> DeleteUser(int id) 
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(Response<ListLivingBeingModel>), StatusCodes.Status500InternalServerError)]
+    public async Task<ActionResult<ServiceResponse<UserResponseModel>>> DeleteUser(int id) 
     {
-        try 
-	    {
-            var response = await _service.DeleteUser(id);
-            return StatusCode(StatusCodes.Status200OK, new ServiceResponse<UserResponseModel>()
-            {
-                Status = StatusCodes.Status200OK,
-                Success = true,
-                Message = "Usuário deletado com sucesso",
-                Data = response,
-            });
-        }
-	    catch (Exception ex)
-	    {
-            return StatusCode(StatusCodes.Status500InternalServerError, new ServiceResponse<UserModel>() { Status = StatusCodes.Status500InternalServerError, Success = false, Message = ex.Message });
-        }
-    
+        var response = await _service.DeleteUser(id);
+        return response;    
     }
 
     [HttpPost]
+    [ProducesResponseType(StatusCodes.Status201Created)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(Response<ListLivingBeingModel>), StatusCodes.Status500InternalServerError)]
     public async Task<ActionResult<ServiceResponse<UserResponseModel>>> CreateUser(UserModel user)
     {
-        try
-        {
-            var response = await _service.CreateUser(user);
-            return StatusCode(StatusCodes.Status201Created, new ServiceResponse<UserResponseModel>()
-            {
-                Status = StatusCodes.Status201Created,
-                Success = true,
-                Message = "Usuário criado com sucesso",
-                Data = response,
-            });
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(StatusCodes.Status500InternalServerError, new ServiceResponse<UserModel>() { Status = StatusCodes.Status500InternalServerError, Success = false, Message = ex.Message });
-        }
-
+        var response = await _service.CreateUser(user);
+        return response;
     }
 
     [HttpPut]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(Response<ListLivingBeingModel>), StatusCodes.Status500InternalServerError)]
     public async Task<ActionResult<ServiceResponse<UserResponseModel>>> UpdateUser(UserUpdateModel user)
     {
-        try
-        {
-            var response = await _service.UpdateUser(user);
-            return StatusCode(StatusCodes.Status200OK, new ServiceResponse<UserResponseModel>()
-            {
-                Status = StatusCodes.Status200OK,
-                Success = true,
-                Message = "Usuário atualizado com sucesso",
-                Data = response,
-            });
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(StatusCodes.Status500InternalServerError, new ServiceResponse<UserModel>() { Status = StatusCodes.Status500InternalServerError, Success = false, Message = ex.Message });
-        }
-
+        var response = await _service.UpdateUser(user);
+        return response;
     }
 
     [HttpPut("UpdatedPassword")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+    [ProducesResponseType(typeof(Response<ListLivingBeingModel>), StatusCodes.Status500InternalServerError)]
     public async Task<ActionResult<ServiceResponse<UserResponseModel>>> UpdatePassword(UserChangePasswordModel changePassword)
     {
-        try
-        {
-            var response = await _service.UpdatePassword(changePassword);
-            return StatusCode(StatusCodes.Status200OK, new ServiceResponse<UserResponseModel>()
-            {
-                Status = StatusCodes.Status200OK,
-                Success = true,
-                Message = "Senha atualizada com sucesso",
-                Data = response,
-            });
-        }
-        catch (Exception ex)
-        {
-            return StatusCode(StatusCodes.Status500InternalServerError, new ServiceResponse<UserModel>() { Status = StatusCodes.Status500InternalServerError, Success = false, Message = ex.Message });
-        }
+        var response = await _service.UpdatePassword(changePassword);
+        return response;
 
     }
 }

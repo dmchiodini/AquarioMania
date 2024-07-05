@@ -1,12 +1,13 @@
-﻿using AquarioMania.Models.LivingBeing;
+﻿using AquarioMania.Models;
+using AquarioMania.Models.LivingBeing;
 
 namespace AquarioMania.Service;
 
 public interface ILivingBeingInterface
 {
-    Task<IEnumerable<ListLivingBeingModel>> GetLivingBeing();
-    Task<LivingBeingModel> CreateLivingBeing(LivingBeingModel livingBeing, string token);
-    Task<ListLivingBeingModel> GetLivingBeingById(int id);
-    Task<LivingBeingModel> UpdateLivingBeing(LivingBeingModel livingBeing, string token);
-    Task<LivingBeingModel> DeleteLivingBeing(int id);
+    Task<ServiceResponse<IEnumerable<ListLivingBeingModel>>> GetLivingBeing();
+    Task<ServiceResponse<LivingBeingModel>> CreateLivingBeing(LivingBeingModel livingBeing, string token);
+    Task<ServiceResponse<ListLivingBeingModel>> GetLivingBeingById(int id);
+    Task<ServiceResponse<LivingBeingModel>> UpdateLivingBeing(LivingBeingModel livingBeing, string token);
+    Task<ServiceResponse<LivingBeingModel>> DeleteLivingBeing(int id);
 }
