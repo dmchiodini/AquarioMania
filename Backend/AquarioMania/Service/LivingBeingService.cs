@@ -1,5 +1,6 @@
 ﻿using AquarioMania.Models.LivingBeing;
 using AquarioMania.Repository;
+using AquarioMania.Utils;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
@@ -8,15 +9,20 @@ namespace AquarioMania.Service;
 public class LivingBeingService : ILivingBeingInterface
 {
     private readonly ILivingBeingRepository _livingBeingRepository;
-    public LivingBeingService(ILivingBeingRepository livingBeingRepository)
+    private readonly SystemUtils _utils = new SystemUtils();
+    private readonly AquarioManiaSettings _settings;
+    public LivingBeingService(ILivingBeingRepository livingBeingRepository, AquarioManiaSettings settings)
     {
         _livingBeingRepository = livingBeingRepository;
+        _settings = settings;
     }
 
-    public async Task<LivingBeingModel> CreateLivingBeing(LivingBeingModel livingBeing)
+    public async Task<LivingBeingModel> CreateLivingBeing(LivingBeingModel livingBeing, string token)
     {
         try
         {
+            var key = _settings.PrivateKey;
+            var decodeToken = _utils.GetDecodeToken(token.Split(' ')[1], key) ?? throw new Exception("ErrorDecodingToken");
             var create = await _livingBeingRepository.CreateLivingBeing(livingBeing);
             return create;
         }
@@ -65,10 +71,12 @@ public class LivingBeingService : ILivingBeingInterface
         }
     }
 
-    public async Task<LivingBeingModel> UpdateLivingBeing(LivingBeingModel livingBeing)
+    public async Task<LivingBeingModel> UpdateLivingBeing(LivingBeingModel livingBeing, string token)
     {
         try
         {
+            var key = _settings.PrivateKey;
+            var decodeToken = _utils.GetDecodeToken(token.Split(' ')[1], key) ?? throw new Exception("ErrorDecodingToken", new Exception(""));
             var response = await _livingBeingRepository.UpdateLivingBeing(livingBeing);
             return response;
         }

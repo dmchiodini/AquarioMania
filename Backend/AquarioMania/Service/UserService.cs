@@ -8,10 +8,12 @@ public class UserService : IUserInterface
 {
     private readonly IUserRepository _userRepository;
     private readonly SystemUtils _utils = new SystemUtils();
+    private readonly AquarioManiaSettings _settings;
 
-    public UserService(IUserRepository userRepository)
+    public UserService(IUserRepository userRepository, AquarioManiaSettings settings)
     {
         _userRepository = userRepository;
+        _settings = settings;
     }
 
     public Task<UserResponseModel> CreateUser(UserModel user)

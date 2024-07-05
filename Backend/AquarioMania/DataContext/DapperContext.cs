@@ -11,8 +11,7 @@ public class DapperContext
     public DapperContext(IConfiguration configuration)
     {
         _configuration = configuration;
-        _connectionString = _configuration.GetConnectionString("DefaultConnection");
     }
     public IDbConnection CreateConnection()
-        => new SqlConnection(_connectionString);
+        => new SqlConnection(_configuration.GetSection("Settings").GetSection("ConnectionString").Value);
 }

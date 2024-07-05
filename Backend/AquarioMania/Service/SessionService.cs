@@ -10,12 +10,12 @@ public class SessionService : ISessionInterface
 {
     private readonly IUserInterface _userService;
     private readonly SystemUtils _utils = new SystemUtils();
-    private readonly IConfiguration _configuration;
+    private readonly AquarioManiaSettings _settings;
 
-    public SessionService(IUserInterface userService, IConfiguration configuration)
+    public SessionService(IUserInterface userService, AquarioManiaSettings settings)
     {
         _userService = userService;
-        _configuration = configuration;
+        _settings = settings;
     }
 
     public async Task<ServiceResponse<SessionModel>> CreateSession(CreateSessionModel createSession)
@@ -52,7 +52,7 @@ public class SessionService : ISessionInterface
                 };
             }
 
-            var key = _configuration.GetSection("PrivateKey").Value;
+            var key = _settings.PrivateKey;
 
             var createdSession = new SessionModel()
             {
