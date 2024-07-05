@@ -2,6 +2,7 @@
 using AquarioMania.Models.LivingBeing;
 using AquarioMania.Service;
 using Azure;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace AquarioMania.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class LivingBeingController : ControllerBase
     {
         private readonly ILivingBeingInterface _service;
@@ -21,6 +23,10 @@ namespace AquarioMania.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(typeof(Response<ListLivingBeingModel>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<ServiceResponse<IEnumerable<ListLivingBeingModel>>>> GetLivingBeing() 
         {
             try
@@ -42,6 +48,10 @@ namespace AquarioMania.Controllers
            
     }
         [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(typeof(Response<ListLivingBeingModel>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<ServiceResponse<ListLivingBeingModel>>> GetLivingBeingById(int id)
         {
             try
@@ -69,11 +79,17 @@ namespace AquarioMania.Controllers
         }
 
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(typeof(Response<LivingBeingModel>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<ServiceResponse<LivingBeingModel>>> CreateLivingBeing(LivingBeingModel livingBeing)
         {
             try
             {
-                var createdLivingBeing = await _service.CreateLivingBeing(livingBeing);
+
+                var token = Request.Headers["Authorization"];
+                var createdLivingBeing = await _service.CreateLivingBeing(livingBeing, token);
                 return StatusCode(StatusCodes.Status201Created, new ServiceResponse<LivingBeingModel>()
                 {
                     Status = StatusCodes.Status201Created,
@@ -89,12 +105,17 @@ namespace AquarioMania.Controllers
         }
 
         [HttpPut]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(typeof(Response<LivingBeingModel>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<ServiceResponse<LivingBeingModel>>> UpdateLivingBeing(LivingBeingModel livingBeing)
         {
 
             try
             {
-                var updatedLivingBeing = await _service.UpdateLivingBeing(livingBeing);
+                var token = Request.Headers["Authorization"];
+                var updatedLivingBeing = await _service.UpdateLivingBeing(livingBeing, token);
 
                 if (updatedLivingBeing == null)
                 {
@@ -117,6 +138,10 @@ namespace AquarioMania.Controllers
         }
 
         [HttpDelete]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(typeof(Response<LivingBeingModel>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<ServiceResponse<List<LivingBeingModel>>>> DeleteLivingBeing(int id)
         {
             try

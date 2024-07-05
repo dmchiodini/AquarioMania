@@ -1,14 +1,13 @@
 using AquarioMania.DataContext;
-using AquarioMania.Repository;
-using AquarioMania.Service;
+using AquarioMania.Utils;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
-using MySqlConnector;
 using System.Text;
+using AquarioMania.DependencyInjection;
+using Microsoft.Extensions.Options;
+using Microsoft.OpenApi.Models;
+using Microsoft.Extensions.DependencyInjection;
+
 
 /*var builder = WebApplication.CreateBuilder(args);
 
@@ -38,6 +37,8 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions
     WebRootPath = "wwwroot"
 });
 
+builder.Services.Configure<AquarioManiaSettings>(builder.Configuration.GetSection("Settings"));
+
 // Add services to the container.
 builder.Services.AddSingleton<DapperContext>();
 builder.Services.AddControllers();
@@ -45,15 +46,11 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<ILivingBeingInterface, LivingBeingService>();
-builder.Services.AddScoped<ILivingBeingRepository, LivingBeingRepository>();
-builder.Services.AddScoped<IUserRepository, UserRepository>();
-builder.Services.AddScoped<IUserInterface, UserService>();
-builder.Services.AddScoped<ISessionInterface, SessionService>();
+RegistryDependency.RegisterRepository(builder.Services);
+RegistryDependency.RegisterServices(builder.Services);
 
 
-var privateKey = builder.Configuration.GetSection("PrivateKey").Value;
-
+var privateKey = builder.Configuration.GetSection("Settings").GetSection("PrivateKey").Value;
 
 builder.Services
     .AddAuthentication(x =>
@@ -74,6 +71,40 @@ builder.Services
         };
     });
 
+
+builder.Services.AddSwaggerGen(config =>
+{
+    config.SwaggerDoc("v1", new OpenApiInfo
+    {
+        Version = "v1",
+        Title = "AquarioMania API",
+        Description = "Documentação da API do Microserviço de Integração com AquarioMania",
+    });
+    config.AddSecurityDefinition("Bearer",
+            new OpenApiSecurityScheme
+            {
+                Name = "Authorization",
+                In = ParameterLocation.Header,
+                Type = SecuritySchemeType.ApiKey,
+                Scheme = "Bearer",
+                BearerFormat = "JWT",
+                Description = "JWT Authorization header using the Bearer scheme (Example: 'Bearer 12345abcdef')",
+            });
+    config.AddSecurityRequirement(new OpenApiSecurityRequirement()
+    {
+        {
+             new OpenApiSecurityScheme
+          {
+            Reference = new OpenApiReference
+              {
+                Type = ReferenceType.SecurityScheme,
+                Id = "Bearer"
+              },
+            },
+            Array.Empty<string>()
+        }
+    });
+});
 
 
 builder.Services.AddHealthChecks();
