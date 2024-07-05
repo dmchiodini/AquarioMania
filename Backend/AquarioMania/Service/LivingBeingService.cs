@@ -1,6 +1,8 @@
-﻿using AquarioMania.Models.LivingBeing;
+﻿using AquarioMania.Models;
+using AquarioMania.Models.LivingBeing;
 using AquarioMania.Repository;
 using AquarioMania.Utils;
+using Azure;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,72 +19,186 @@ public class LivingBeingService : ILivingBeingInterface
         _settings = settings;
     }
 
-    public async Task<LivingBeingModel> CreateLivingBeing(LivingBeingModel livingBeing, string token)
+    public async Task<ServiceResponse<LivingBeingModel>> CreateLivingBeing(LivingBeingModel livingBeing, string token)
     {
         try
         {
             var key = _settings.PrivateKey;
             var decodeToken = _utils.GetDecodeToken(token.Split(' ')[1], key) ?? throw new Exception("ErrorDecodingToken");
-            var create = await _livingBeingRepository.CreateLivingBeing(livingBeing);
-            return create;
+            var response = await _livingBeingRepository.CreateLivingBeing(livingBeing);
+
+            return new ServiceResponse<LivingBeingModel>()
+            {
+                Status = StatusCodes.Status201Created,
+                Success = true,
+                Message = "Ser vivo criado com sucesso",
+                Data = response,
+            };
         }
         catch (Exception ex)
         {
-            throw new Exception("Exception while creating livingBeing", ex);
+            return new ServiceResponse<LivingBeingModel>()
+            {
+                Status = StatusCodes.Status201Created,
+                Success = true,
+                Message = $"{ex.Message}",
+                Data = null,
+                Error = "InternalServerError"
+            };
         }
     }
 
-    public async Task<LivingBeingModel> DeleteLivingBeing(int id)
+    public async Task<ServiceResponse<LivingBeingModel>> DeleteLivingBeing(int id)
     {
         try
         {
             var response = await _livingBeingRepository.DeleteLivingBeing(id);  
-            return response;
+
+            if (response == null)
+            {
+                return new ServiceResponse<LivingBeingModel>() 
+                { 
+                    Status = StatusCodes.Status404NotFound, 
+                    Success = false, 
+                    Message = $"Não foi encontrado ser vivo com o id '{id}'",
+                    Data= null,
+                };
+            }
+
+            return new ServiceResponse<LivingBeingModel>()
+            {
+                Status = StatusCodes.Status200OK,
+                Success = true,
+                Message = "Ser vivo deletado com sucesso",
+                Data = response,
+            };
         }
         catch (Exception ex)
         {
-            throw new Exception("Exception while retrieving livingBeing", ex);
+            return new ServiceResponse<LivingBeingModel>()
+            {
+                Status = StatusCodes.Status500InternalServerError,
+                Success = false,
+                Message = $"{ex.Message}",
+                Data = null,
+                Error = "InternalServerError"
+            };
         }
     }
 
-    public async Task<IEnumerable<ListLivingBeingModel>> GetLivingBeing()
+    public async Task<ServiceResponse<IEnumerable<ListLivingBeingModel>>> GetLivingBeing()
     {
         try
         {
             var response = await _livingBeingRepository.GetLivingBeing();
-            return response;
+            if (response == null)
+            {
+                return new ServiceResponse<IEnumerable<ListLivingBeingModel>>()
+                {
+                    Status = StatusCodes.Status204NoContent,
+                    Success = false,
+                    Message = "Não há seres vivos cadastrados",
+                    Data = null,
+                };
+            }
+
+            return new ServiceResponse<IEnumerable<ListLivingBeingModel>>()
+            {
+                Status = StatusCodes.Status200OK,
+                Success = true,
+                Message = "Seres vivos retornados com sucesso",
+                Data = response,
+            };
         }
         catch (Exception ex)
         {
-            throw new Exception("Exception while retrieving livingBeing", ex);
+            return new ServiceResponse<IEnumerable<ListLivingBeingModel>>()
+            {
+                Status = StatusCodes.Status500InternalServerError,
+                Success = false,
+                Message = $"{ex.Message}",
+                Data = null,
+                Error = "InternalServerError"
+            };
         }
     }
 
-    public async Task<ListLivingBeingModel> GetLivingBeingById(int id)
+    public async Task<ServiceResponse<ListLivingBeingModel>> GetLivingBeingById(int id)
     {
         try
         {
             var response = await _livingBeingRepository.GetLivingBeingById(id);
-            return response;
+
+            if (response == null)
+            {
+                return new ServiceResponse<ListLivingBeingModel>()
+                {
+                    Status = StatusCodes.Status204NoContent,
+                    Success = false,
+                    Message = "Não há seres vivos cadastrados",
+                    Data = null,
+                };
+            }
+
+            return new ServiceResponse<ListLivingBeingModel>()
+            {
+                Status = StatusCodes.Status200OK,
+                Success = true,
+                Message = "Ser vivo retornado com sucesso",
+                Data = response,
+            };
         }
         catch (Exception ex)
         {
-            throw new Exception(" Exception while retrieving livingBeing", ex);
+            return new ServiceResponse<ListLivingBeingModel>()
+            {
+                Status = StatusCodes.Status500InternalServerError,
+                Success = false,
+                Message = $"{ex.Message}",
+                Data = null,
+                Error = "InternalServerError"
+            };
         }
     }
 
-    public async Task<LivingBeingModel> UpdateLivingBeing(LivingBeingModel livingBeing, string token)
+    public async Task<ServiceResponse<LivingBeingModel>> UpdateLivingBeing(LivingBeingModel livingBeing, string token)
     {
         try
         {
             var key = _settings.PrivateKey;
             var decodeToken = _utils.GetDecodeToken(token.Split(' ')[1], key) ?? throw new Exception("ErrorDecodingToken", new Exception(""));
             var response = await _livingBeingRepository.UpdateLivingBeing(livingBeing);
-            return response;
+
+
+            if (response == null)
+            {
+                return new ServiceResponse<LivingBeingModel>() 
+                { 
+                    Status = StatusCodes.Status404NotFound, 
+                    Success = false, 
+                    Message = $"Não foi encontrado ser vivo com o id '{livingBeing.Id}'",
+                    Data = null
+                };
+            }
+
+            return new ServiceResponse<LivingBeingModel>()
+            {
+                Status = StatusCodes.Status200OK,
+                Success = true,
+                Message = "Ser vivo atualizado com sucesso",
+                Data = response,
+            };
         }
         catch (Exception ex)
         {
-            throw new Exception(" Exception while updating livingBeing", ex);
+            return new ServiceResponse<LivingBeingModel>()
+            {
+                Status = StatusCodes.Status500InternalServerError,
+                Success = false,
+                Message = $"{ex.Message}",
+                Data = null,
+                Error = "InternalServerError"
+            };
         }
     }
 }

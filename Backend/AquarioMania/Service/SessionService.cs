@@ -26,7 +26,9 @@ public class SessionService : ISessionInterface
 
             var passwordHasher = string.Empty;
 
-            user = await _userService.GetUserByEmail(createSession.Email);
+            var getUser = await _userService.GetUserByEmail(createSession.Email);
+
+            user = getUser.Data;
 
             if(user == null)
             {
@@ -79,7 +81,14 @@ public class SessionService : ISessionInterface
         }
         catch (Exception ex)
         {
-            throw new Exception($"Exception while creating session! {ex}");
+            return new ServiceResponse<SessionModel>()
+            {
+                Status = StatusCodes.Status500InternalServerError,
+                Success = true,
+                Message = $"{ex.Message}",
+                Data = null,
+                Error = "InternalServerError"
+            };
         }
     }
 

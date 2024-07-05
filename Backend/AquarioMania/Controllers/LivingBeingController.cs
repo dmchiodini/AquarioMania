@@ -23,59 +23,25 @@ namespace AquarioMania.Controllers
         }
 
         [HttpGet]
-        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(typeof(Response<ListLivingBeingModel>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<ServiceResponse<IEnumerable<ListLivingBeingModel>>>> GetLivingBeing() 
-        {
-            try
-            {
-                var response = await _service.GetLivingBeing();
-                return StatusCode(StatusCodes.Status200OK, new ServiceResponse<IEnumerable<ListLivingBeingModel>>()
-                {
-                    Status = StatusCodes.Status200OK,
-                    Success = true,
-                    Message = response.Count() == 0 ? "Não há seres vivos cadastrados" : "Seres vivos retornados com sucesso",
-                    Data = response,
-                });
-            }
-            catch (Exception ex)
-            {
+        {           
+            var response = await _service.GetLivingBeing();    
+            return response;
+        }
 
-                return StatusCode(StatusCodes.Status500InternalServerError, new ServiceResponse<LivingBeingModel>() { Status = StatusCodes.Status500InternalServerError, Success = false, Message = ex.Message });
-            }
-           
-    }
         [HttpGet("{id}")]
-        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(typeof(Response<ListLivingBeingModel>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<ServiceResponse<ListLivingBeingModel>>> GetLivingBeingById(int id)
         {
-            try
-            {
-                var response = await _service.GetLivingBeingById(id);
-
-                if(response == null)
-                {
-                    return StatusCode(StatusCodes.Status404NotFound, new ServiceResponse<ListLivingBeingModel>() { Status = StatusCodes.Status404NotFound, Success = false, Message = $"Não foi encontrado ser vivo com o id '{id}'" });
-                }
-
-                return StatusCode(StatusCodes.Status200OK, new ServiceResponse<ListLivingBeingModel>()
-                {
-                    Status = StatusCodes.Status200OK,
-                    Success = true,
-                    Message = "Ser vivo retornado com sucesso",
-                    Data = response,
-                });
-            }
-            catch (Exception ex)
-            {
-
-                return StatusCode(StatusCodes.Status500InternalServerError, new ServiceResponse<LivingBeingModel>() { Status = StatusCodes.Status500InternalServerError, Success = false, Message = ex.Message });
-            }
+            var response = await _service.GetLivingBeingById(id);
+            return response;
         }
 
         [HttpPost]
@@ -85,90 +51,32 @@ namespace AquarioMania.Controllers
         [ProducesResponseType(typeof(Response<LivingBeingModel>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<ServiceResponse<LivingBeingModel>>> CreateLivingBeing(LivingBeingModel livingBeing)
         {
-            try
-            {
-
-                var token = Request.Headers["Authorization"];
-                var createdLivingBeing = await _service.CreateLivingBeing(livingBeing, token);
-                return StatusCode(StatusCodes.Status201Created, new ServiceResponse<LivingBeingModel>()
-                {
-                    Status = StatusCodes.Status201Created,
-                    Success = true,
-                    Message = "Ser vivo criado com sucesso",
-                    Data = createdLivingBeing,
-                });
-
-            }catch(Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, new ServiceResponse<LivingBeingModel>() { Status = StatusCodes.Status500InternalServerError, Success = false, Message = ex.Message });
-            }
+            var token = Request.Headers["Authorization"];
+            var createdLivingBeing = await _service.CreateLivingBeing(livingBeing, token);
+            return createdLivingBeing;
         }
 
         [HttpPut]
-        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(typeof(Response<LivingBeingModel>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<ServiceResponse<LivingBeingModel>>> UpdateLivingBeing(LivingBeingModel livingBeing)
         {
-
-            try
-            {
-                var token = Request.Headers["Authorization"];
-                var updatedLivingBeing = await _service.UpdateLivingBeing(livingBeing, token);
-
-                if (updatedLivingBeing == null)
-                {
-                    return StatusCode(StatusCodes.Status404NotFound, new ServiceResponse<LivingBeingModel>() { Status = StatusCodes.Status404NotFound, Success = false, Message = $"Não foi encontrado ser vivo com o id '{livingBeing.Id}'" });
-                }
-
-                return StatusCode(StatusCodes.Status200OK, new ServiceResponse<LivingBeingModel>()
-                {
-                    Status = StatusCodes.Status200OK,
-                    Success = true,
-                    Message = "Ser vivo atualizado com sucesso",
-                    Data = updatedLivingBeing,
-                });
-            }
-            catch (Exception ex)
-            {
-
-                return StatusCode(StatusCodes.Status500InternalServerError, new ServiceResponse<LivingBeingModel>() { Status = StatusCodes.Status500InternalServerError, Success = false, Message = ex.Message }); ;
-            }
+            var token = Request.Headers["Authorization"];
+            var updatedLivingBeing = await _service.UpdateLivingBeing(livingBeing, token);
+            return updatedLivingBeing;
         }
 
         [HttpDelete]
-        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(typeof(Response<LivingBeingModel>), StatusCodes.Status500InternalServerError)]
-        public async Task<ActionResult<ServiceResponse<List<LivingBeingModel>>>> DeleteLivingBeing(int id)
+        public async Task<ActionResult<ServiceResponse<LivingBeingModel>>> DeleteLivingBeing(int id)
         {
-            try
-            {
-
-                var getById = await _service.GetLivingBeingById(id);
-
-                if (getById == null)
-                {
-                    return StatusCode(StatusCodes.Status404NotFound, new ServiceResponse<LivingBeingModel>() { Status = StatusCodes.Status404NotFound, Success = false, Message = $"Não foi encontrado ser vivo com o id '{id}'" });
-                }
-
-                var deleteLivingBeing = await _service.DeleteLivingBeing(id);
-
-                return StatusCode(StatusCodes.Status200OK, new ServiceResponse<LivingBeingModel>()
-                {
-                    Status = StatusCodes.Status200OK,
-                    Success = true,
-                    Message = "Ser vivo deletado com sucesso",
-                    Data = deleteLivingBeing,
-                });
-
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, new ServiceResponse<LivingBeingModel>() { Status = StatusCodes.Status500InternalServerError, Success = false, Message = ex.Message });
-            }
+            var response = await _service.DeleteLivingBeing(id);
+            return response;
         }
     }
 }

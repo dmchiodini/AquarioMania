@@ -3,104 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\controllers\\livingbeingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\controllers\\livingbeingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\repository\\livingbeingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\repository\\livingbeingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\datacontext\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\datacontext\\dappercontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\dependencyinjection\\registrydependency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\dependencyinjection\\registrydependency.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\service\\livingbeingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\service\\livingbeingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\service\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\service\\sessionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\aquariomania.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\aquariomania.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\utils\\systemutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\utils\\systemutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\service\\isessioninterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\service\\isessioninterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\utils\\aquariomaniasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\utils\\aquariomaniasettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\service\\livingbeingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\service\\livingbeingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\controllers\\sessioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\controllers\\sessioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\models\\serviceresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\controllers\\livingbeingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\controllers\\livingbeingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\service\\iuserinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\service\\iuserinterface.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\models\\session\\sessionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\models\\session\\sessionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\repository\\ilivingbeingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\repository\\ilivingbeingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\repository\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\models\\user\\userchangepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\models\\user\\userchangepasswordmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\models\\user\\userupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\models\\user\\userupdatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|c:\\users\\55119\\desktop\\aquariomania\\backend\\aquariomania\\models\\decodetokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D4D8DE9-CBCE-4F8D-AFA1-082C939E5066}|AquarioMania\\AquarioMania.csproj|solutionrelative:aquariomania\\models\\decodetokenmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -110,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -130,327 +54,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Program.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Program.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Program.cs",
-              "RelativeToolTip": "AquarioMania\\Program.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAswFkAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T18:08:34.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DapperContext.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\DataContext\\DapperContext.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\DataContext\\DapperContext.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\DataContext\\DapperContext.cs",
-              "RelativeToolTip": "AquarioMania\\DataContext\\DapperContext.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T10:49:54.866Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LivingBeingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Repository\\LivingBeingRepository.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Repository\\LivingBeingRepository.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Repository\\LivingBeingRepository.cs",
-              "RelativeToolTip": "AquarioMania\\Repository\\LivingBeingRepository.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAANYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T15:58:47.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LivingBeingController.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Controllers\\LivingBeingController.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Controllers\\LivingBeingController.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Controllers\\LivingBeingController.cs",
-              "RelativeToolTip": "AquarioMania\\Controllers\\LivingBeingController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T14:14:21.561Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "appsettings.Production.json",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\appsettings.Production.json",
-              "RelativeDocumentMoniker": "AquarioMania\\appsettings.Production.json",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\appsettings.Production.json",
-              "RelativeToolTip": "AquarioMania\\appsettings.Production.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-05T16:00:32.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RegistryDependency.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\DependencyInjection\\RegistryDependency.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\DependencyInjection\\RegistryDependency.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\DependencyInjection\\RegistryDependency.cs",
-              "RelativeToolTip": "AquarioMania\\DependencyInjection\\RegistryDependency.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T15:46:44.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LivingBeingService.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\LivingBeingService.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Service\\LivingBeingService.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\LivingBeingService.cs",
-              "RelativeToolTip": "AquarioMania\\Service\\LivingBeingService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T15:51:22.178Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
               "Title": "SessionService.cs",
               "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\SessionService.cs",
               "RelativeDocumentMoniker": "AquarioMania\\Service\\SessionService.cs",
               "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\SessionService.cs",
               "RelativeToolTip": "AquarioMania\\Service\\SessionService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBEAAAAdAAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAowDgAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T18:25:14.406Z",
+              "WhenOpened": "2024-07-05T20:49:24.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LivingBeingService.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\LivingBeingService.cs",
+              "RelativeDocumentMoniker": "AquarioMania\\Service\\LivingBeingService.cs",
+              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\LivingBeingService.cs",
+              "RelativeToolTip": "AquarioMania\\Service\\LivingBeingService.cs",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAmwMsAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-05T20:48:22.887Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "AquarioMania\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\appsettings.Development.json",
-              "RelativeToolTip": "AquarioMania\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-05T15:10:52.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AquarioMania.csproj",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\AquarioMania.csproj",
-              "RelativeDocumentMoniker": "AquarioMania\\AquarioMania.csproj",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\AquarioMania.csproj",
-              "RelativeToolTip": "AquarioMania\\AquarioMania.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-02T22:31:05.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "SystemUtils.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Utils\\SystemUtils.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Utils\\SystemUtils.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Utils\\SystemUtils.cs",
-              "RelativeToolTip": "AquarioMania\\Utils\\SystemUtils.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAABKAAAA",
+              "Title": "LivingBeingController.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Controllers\\LivingBeingController.cs",
+              "RelativeDocumentMoniker": "AquarioMania\\Controllers\\LivingBeingController.cs",
+              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Controllers\\LivingBeingController.cs",
+              "RelativeToolTip": "AquarioMania\\Controllers\\LivingBeingController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T20:15:39.265Z",
+              "WhenOpened": "2024-07-05T20:46:01.559Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\UserService.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Service\\UserService.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\UserService.cs",
-              "RelativeToolTip": "AquarioMania\\Service\\UserService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T15:38:21.861Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ISessionInterface.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\ISessionInterface.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Service\\ISessionInterface.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\ISessionInterface.cs",
-              "RelativeToolTip": "AquarioMania\\Service\\ISessionInterface.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T20:19:47.769Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AquarioManiaSettings.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Utils\\AquarioManiaSettings.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Utils\\AquarioManiaSettings.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Utils\\AquarioManiaSettings.cs",
-              "RelativeToolTip": "AquarioMania\\Utils\\AquarioManiaSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-05T15:09:41.887Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\appsettings.json",
-              "RelativeDocumentMoniker": "AquarioMania\\appsettings.json",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\appsettings.json",
-              "RelativeToolTip": "AquarioMania\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-03T18:32:35.121Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SessionController.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Controllers\\SessionController.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Controllers\\SessionController.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Controllers\\SessionController.cs",
-              "RelativeToolTip": "AquarioMania\\Controllers\\SessionController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAIBJwCIAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T18:23:45.274Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Controllers\\UserController.cs",
-              "RelativeToolTip": "AquarioMania\\Controllers\\UserController.cs",
-              "ViewState": "AQIAAGEAAAAAAAAAAADwv3MAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T16:18:42.711Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "SessionModel.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Models\\Session\\SessionModel.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Models\\Session\\SessionModel.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Models\\Session\\SessionModel.cs",
-              "RelativeToolTip": "AquarioMania\\Models\\Session\\SessionModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T13:11:40.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 5,
               "Title": "IUserInterface.cs",
               "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\IUserInterface.cs",
               "RelativeDocumentMoniker": "AquarioMania\\Service\\IUserInterface.cs",
               "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\IUserInterface.cs",
               "RelativeToolTip": "AquarioMania\\Service\\IUserInterface.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAA3AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T16:30:55.378Z",
+              "WhenOpened": "2024-07-05T20:39:45.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ServiceResponse.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Models\\ServiceResponse.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Models\\ServiceResponse.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Models\\ServiceResponse.cs",
-              "RelativeToolTip": "AquarioMania\\Models\\ServiceResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAANAAAA",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "AquarioMania\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Controllers\\UserController.cs",
+              "RelativeToolTip": "AquarioMania\\Controllers\\UserController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwCsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T12:49:59.689Z",
+              "WhenOpened": "2024-07-05T20:16:16.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "ILivingBeingRepository.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Repository\\ILivingBeingRepository.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Repository\\ILivingBeingRepository.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Repository\\ILivingBeingRepository.cs",
-              "RelativeToolTip": "AquarioMania\\Repository\\ILivingBeingRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "AquarioMania\\Service\\UserService.cs",
+              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Service\\UserService.cs",
+              "RelativeToolTip": "AquarioMania\\Service\\UserService.cs",
+              "ViewState": "AQIAADAAAAAAAAAAAAAwwFEAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T15:55:48.474Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "IUserRepository.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Repository\\IUserRepository.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Repository\\IUserRepository.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Repository\\IUserRepository.cs",
-              "RelativeToolTip": "AquarioMania\\Repository\\IUserRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T16:18:33.501Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "UserChangePasswordModel.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Models\\User\\UserChangePasswordModel.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Models\\User\\UserChangePasswordModel.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Models\\User\\UserChangePasswordModel.cs",
-              "RelativeToolTip": "AquarioMania\\Models\\User\\UserChangePasswordModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T15:55:43.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "UserUpdateModel.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Models\\User\\UserUpdateModel.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Models\\User\\UserUpdateModel.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Models\\User\\UserUpdateModel.cs",
-              "RelativeToolTip": "AquarioMania\\Models\\User\\UserUpdateModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-03T13:21:30.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "DecodeTokenModel.cs",
-              "DocumentMoniker": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Models\\DecodeTokenModel.cs",
-              "RelativeDocumentMoniker": "AquarioMania\\Models\\DecodeTokenModel.cs",
-              "ToolTip": "C:\\Users\\55119\\Desktop\\AquarioMania\\Backend\\AquarioMania\\Models\\DecodeTokenModel.cs",
-              "RelativeToolTip": "AquarioMania\\Models\\DecodeTokenModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T22:26:07.242Z",
+              "WhenOpened": "2024-07-05T20:15:25.369Z",
               "EditorCaption": ""
             }
           ]

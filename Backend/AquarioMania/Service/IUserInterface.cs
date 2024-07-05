@@ -1,15 +1,16 @@
-﻿using AquarioMania.Models.User;
+﻿using AquarioMania.Models;
+using AquarioMania.Models.User;
 
 namespace AquarioMania.Service;
 
 public interface IUserInterface
 {
-    Task<IEnumerable<UserResponseModel>> GetUsers();
-    Task<UserResponseModel> CreateUser(UserModel user);
-    Task<UserResponseModel> GetUserById(int id);
-    Task<UserResponseModel> GetUserByEmail(string email);
-    Task<UserResponseModel> UpdateUser(UserUpdateModel user);
-    Task<UserResponseModel> DeleteUser(int id);
-    Task<UserResponseModel> UpdatePassword(UserChangePasswordModel changePassowrd);
+    Task<ServiceResponse<IEnumerable<UserResponseModel>>> GetUsers();
+    Task<ServiceResponse<UserResponseModel>> CreateUser(UserModel user);
+    Task<ServiceResponse<UserResponseModel>> GetUserById(int id);
+    Task<ServiceResponse<UserResponseModel>> GetUserByEmail(string email);
+    Task<ServiceResponse<UserResponseModel>> UpdateUser(UserUpdateModel user);
+    Task<ServiceResponse<UserResponseModel>> DeleteUser(int id);
+    Task<ServiceResponse<UserResponseModel>> UpdatePassword(UserChangePasswordModel changePassowrd);
 
 }
